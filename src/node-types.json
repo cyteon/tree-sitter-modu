@@ -209,7 +209,7 @@
     "type": "call_expr",
     "named": true,
     "fields": {
-      "name": {
+      "function": {
         "multiple": false,
         "required": true,
         "types": [

@@ -805,7 +805,7 @@
         "members": [
           {
             "type": "FIELD",
-            "name": "name",
+            "name": "function",
             "content": {
               "type": "SYMBOL",
               "name": "_expression"
