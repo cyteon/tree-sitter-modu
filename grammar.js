@@ -108,7 +108,7 @@ module.exports = grammar({
             ),
         
         call_expr: ($) =>
-            prec.left(10, seq(field("name", $._expression), "(", optional(commaSeperated($._expression)), ")")),
+            prec.left(10, seq(field("fn", $._expression), "(", optional(commaSeperated($._expression)), ")")),
     
         property_expr: ($) =>
             prec.left(10, seq($._expression, ".", field("property", $.identifier))),
