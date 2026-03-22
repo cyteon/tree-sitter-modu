@@ -37,13 +37,13 @@ module.exports = grammar({
                 optional(seq("else", $._block))
             ),
         for_stmt: ($) =>
-            seq("for", $.identifier, "in", $._expression, $._block),
+            seq("for", field("name", $.identifier), "in", $._expression, $._block),
         while_stmt: ($) =>
             seq("while", $._expression, $._block),
         loop_stmt: ($) =>
             seq("loop", $._block),
         class_decl: ($) =>
-            seq("class", $.identifier, "{", repeat($.fn_stmt), "}"),
+            seq("class", field("name", $.identifier), "{", repeat($.fn_stmt), "}"),
         return_stmt: ($) =>
             prec.right(seq("return", optional($._expression))),
         break_stmt: ($) => 
@@ -108,10 +108,10 @@ module.exports = grammar({
             ),
         
         call_expr: ($) =>
-            prec.left(10, seq($._expression, "(", optional(commaSeperated($._expression)), ")")),
+            prec.left(10, seq(field("name", $._expression), "(", optional(commaSeperated($._expression)), ")")),
     
         property_expr: ($) =>
-            prec.left(10, seq($._expression, ".", $.identifier)),
+            prec.left(10, seq($._expression, ".", field("property", $.identifier))),
     
         index_expr: ($) =>
             prec.left(10, seq($._expression, "[", $._expression, "]")),
