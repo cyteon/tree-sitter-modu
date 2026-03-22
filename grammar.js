@@ -29,7 +29,7 @@ module.exports = grammar({
         assign_stmt: ($) =>
             seq($.identifier, choice("=", "+=", "-=", "*=", "/=", "%="), $._expression),
         fn_stmt: ($) => 
-            seq("fn", $.identifier, "(", optional(commaSeperated($.identifier)), ")", $._block),
+            seq("fn", field("name", $.identifier), "(", optional(commaSeperated($.identifier)), ")", $._block),
         if_stmt: ($) =>
             seq(
                 "if", $._expression, $._block, 
