@@ -47,7 +47,12 @@ module.exports = grammar({
         loop_stmt: ($) =>
             seq("loop", $._block),
         class_decl: ($) =>
-            seq("class", field("name", $.identifier), "{", repeat($.fn_stmt), "}"),
+            seq(
+                "class",
+                field("name", $.identifier),
+                optional(seq("extends", $._expression)),
+                "{", repeat($.fn_stmt), "}"
+            ),
         return_stmt: ($) =>
             prec.right(seq("return", optional($._expression))),
         break_stmt: ($) => 
@@ -70,6 +75,7 @@ module.exports = grammar({
                 $.boolean,
                 $.null,
                 $.self,
+                $.super,
                 $.unary_expr,
                 $.binary_expr,
                 $.call_expr,
@@ -95,6 +101,7 @@ module.exports = grammar({
     
         null: ($) => "null",
         self: ($) => "self",
+        super: ($) => "super",
 
         comment: ($) =>
             choice(

@@ -375,6 +375,27 @@
           }
         },
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "extends"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_expression"
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "STRING",
           "value": "{"
         },
@@ -532,6 +553,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "super"
+        },
+        {
+          "type": "SYMBOL",
           "name": "unary_expr"
         },
         {
@@ -631,6 +656,10 @@
     "self": {
       "type": "STRING",
       "value": "self"
+    },
+    "super": {
+      "type": "STRING",
+      "value": "super"
     },
     "comment": {
       "type": "CHOICE",

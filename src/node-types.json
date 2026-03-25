@@ -60,6 +60,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -127,6 +131,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -191,6 +199,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -266,6 +278,10 @@
             "named": true
           },
           {
+            "type": "super",
+            "named": true
+          },
+          {
             "type": "unary_expr",
             "named": true
           }
@@ -329,6 +345,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -355,7 +375,67 @@
       "required": false,
       "types": [
         {
+          "type": "array_literal",
+          "named": true
+        },
+        {
+          "type": "binary_expr",
+          "named": true
+        },
+        {
+          "type": "boolean",
+          "named": true
+        },
+        {
+          "type": "call_expr",
+          "named": true
+        },
+        {
           "type": "fn_stmt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "index_expr",
+          "named": true
+        },
+        {
+          "type": "null",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "object_literal",
+          "named": true
+        },
+        {
+          "type": "parens_expr",
+          "named": true
+        },
+        {
+          "type": "property_expr",
+          "named": true
+        },
+        {
+          "type": "self",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
+          "named": true
+        },
+        {
+          "type": "unary_expr",
           "named": true
         }
       ]
@@ -425,6 +505,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -551,6 +635,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -688,6 +776,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "try_stmt",
           "named": true
         },
@@ -811,6 +903,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "try_stmt",
           "named": true
         },
@@ -905,6 +1001,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -969,6 +1069,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -1087,6 +1191,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "try_stmt",
           "named": true
         },
@@ -1162,6 +1270,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -1226,6 +1338,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -1345,6 +1461,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "try_stmt",
           "named": true
         },
@@ -1431,6 +1551,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "unary_expr",
           "named": true
         }
@@ -1495,6 +1619,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -1618,6 +1746,10 @@
           "named": true
         },
         {
+          "type": "super",
+          "named": true
+        },
+        {
           "type": "try_stmt",
           "named": true
         },
@@ -1690,6 +1822,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -1805,6 +1941,10 @@
         },
         {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "super",
           "named": true
         },
         {
@@ -1991,6 +2131,10 @@
     "named": false
   },
   {
+    "type": "extends",
+    "named": false
+  },
+  {
     "type": "false",
     "named": false
   },
@@ -2044,6 +2188,10 @@
   },
   {
     "type": "self",
+    "named": true
+  },
+  {
+    "type": "super",
     "named": true
   },
   {
